@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.thanksBackground {
+    width: 100%;
+    height: 100vh;
+    background-color: gainsboro;
+}
+
+.info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.head {
+    font-family: 'Arial';
+    font-size: 100%;
+    width: 100%;
+    height: 10%;
+    -webkit-text-fill-color: navy;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.headThree {
+    font-family: 'Bahnschrift';
+    font-size: 100%;
+    width: auto;
+    height: 10%;
+    text-align: center;
+    padding: 1%;
+    border: solid 1px black;
+}
+
+a.mainSite:link {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+}
+
+a.mainSite:hover {
+    text-decoration: underline;
+}
+
+a.mainSite:visited {
+    -webkit-text-fill-color: black;
+}
