@@ -81,5 +81,5 @@ input:focus {
 
 .subButton {
     width: 10%;
-    left: 0;
+    left: auto;
 }
