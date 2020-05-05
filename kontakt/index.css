@@ -59,6 +59,12 @@ input {
     border: dotted 1px black;
 }
 
+input[type=submit] {
+    border: solid 1px black;
+    font-family: 'Bahnschrift';
+    margin-top: 10%;
+}
+
 input:focus {
     font-family: 'Arial';
     width: auto;
