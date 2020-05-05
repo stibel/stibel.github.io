@@ -133,6 +133,7 @@ table.center {
     text-align: center;
     padding: 1%;
     border: solid 1px black;
+    background-color: gainsboro;
 }
 
 .unnumberedList {
