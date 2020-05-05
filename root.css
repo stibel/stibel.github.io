@@ -1,0 +1,8 @@
+.head {
+    font-family: 'Arial';
+    font-size: 100%;
+    width: 100vw;
+    height: 10vh;
+    -webkit-text-fill-color: navy;
+    background-color: skyblue;
+}
