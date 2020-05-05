@@ -65,6 +65,13 @@ input[type=submit] {
     margin-top: 10%;
 }
 
+input[type=submit]:focus {
+    border: solid 1px black;
+    font-family: 'Bahnschrift';
+    margin-top: 10%;
+    background-color: antiquewhite;
+}
+
 input:focus {
     font-family: 'Arial';
     width: auto;
