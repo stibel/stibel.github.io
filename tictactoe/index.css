@@ -1,0 +1,152 @@
+.game {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gainsboro;
+    top: 0;
+    left: 0;
+}
+
+.board {
+    height: 25%;
+    width: 25%;
+    display: grid;
+    grid-templates-row: 1fr 1fr 1fr;
+    grid-templates-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
+    grid-column-gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    cursor: pointer;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+#m {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#lu {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#u {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#ru {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#l {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#r {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#dl {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#d {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#dr {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.tik {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.tik::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    transform: rotate(45deg);
+}
+.tik::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    transform: rotate(-45deg);
+}
+
+.tak {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.tak::before {
+    content: "";
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 6px;
+    left: 6px;
+    z-index: 10;
+}
+
+.head {
+    font-family: 'Bahnschrift';
+    font-size: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 1%;
+    border: solid 1px black;
+}
+
+.head:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    border: solid 2px navy;
+}
+
+a.mainSite:link {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+}
+
+a.mainSite:hover {
+    text-decoration: underline;
+}
+
+a.mainSite:visited {
+    -webkit-text-fill-color: black;
+}
