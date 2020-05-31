@@ -87,10 +87,10 @@ function newGame() {
     gameOver = false;
     for (let i = 0; i < 9; i++)
     {
-        if (positions[i] = 1)
-            divs[i].classList.remove(tik);
-        else if (positions[i] = 2)
-            divs[i].classList.remove(tak);
+        if (positions[i] == 1)
+            divs[i].classList.remove("tik");
+        else if (positions[i] == 2)
+            divs[i].classList.remove("tak");
         positions[i] = 0;
     }
 }
