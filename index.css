@@ -59,6 +59,102 @@ body, html {
     width: 100%;
 }
 
+.tableOfShips {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(12, auto);
+    background-color: black;
+    font-family: Bahnschrift;
+    grid-gap: 1px;
+}
+
+.tableContent {
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+#title {
+    grid-row: 1;
+    grid-column: 1 / 13;
+    justify-self: center;
+}
+
+#shipType {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#shipClass {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#natoCodename {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#projectNumber {
+    grid-row: 2;
+    grid-column: 4;
+}
+
+#shipEnginePower {
+    grid-row: 2;
+    grid-column: 5;
+}
+
+#surfaceBuoyancy {
+    grid-row: 2;
+    grid-column: 6;
+}
+
+#submergedBuoyancy {
+    grid-row: 2;
+    grid-column: 7;
+}
+
+#shipLength {
+    grid-row: 2;
+    grid-column: 8;
+}
+
+#shipWidth {
+    grid-row: 2;
+    grid-column: 9;
+}
+
+#shipCrew {
+    grid-row: 2;
+    grid-column: 10;
+}
+
+#shipMainArmament {
+    grid-row: 2;
+    grid-column: 11;
+}
+
+#submarine {
+    grid-row: 3 / 6;
+    grid-column: 1;
+}
+
+#rocketCruiser {
+    grid-row: 6;
+    grid-column: 1;
+}
+
+
+
+/*
 td, th {
     border: solid black 1px;
     text-align: center;
@@ -71,7 +167,7 @@ table.center {
     margin-left:auto;
     margin-right:auto;
 }
-
+ */
 .photoDesc {
     display: flex;
     flex-flow: row;
