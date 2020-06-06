@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div lang="en">
+<body lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="./index.css">
         <meta charset="UTF-8">
@@ -11,12 +11,37 @@
             <h1>Newsletter</h1>
         </div>
     </div>
+    <?php
+        if (!empty($_REQUEST["firstName") && !empty($_REQUEST["surname"]) && !empty($_REQUEST["mail"] &&
+         !empty($_REQUEST["age"]) && !empty($_REQUEST["sex"]) && !empty($_REQUEST["newsFrequency"]))
+            {
+                $name = $_REQUEST["firstName"];
+                $surname = $_REQUEST["surname"];
+                $mail = $_REQUEST["mail"];
+                $age = $_REQUEST["age"];
+                $sex = $_REQUEST["sex"];
+                $frequency = $_REQUEST["frequency"];
+            } else die("Brak danych wejściowych");
+        $string = file_get_contents("baza.json");
+        if ( $string )
+        $arr = json_decode($string, true) or die("Niewłaściwy plik JSON!") ;
+        else
+        $arr = array();
+        array_push($arr, array("name" = $imie, "nazwisko" = $surname, "email" = $mail, "age" = $age,
+            "sex" = $sex, "frequency" = $frequency));
+        $string = json_encode ( $arr ) ;
+        if(file_put_contents("baza.json", $string ))
+        echo " Dodane !" ;
+        else die("Błąd!") ;
+    >
     <div class ="formBackground">
-        <form class="form" action="kontakt/index.html" method="get">
+        <form class="form" action="welcome.php" method="get">
             <label for="firstName">Imię</label>
             <input type="text" id="firstName" name="firstName" placeholder="Jan">
             <label for="surname">Nazwisko</label>
             <input type="text" id="surname" surname="surname" placeholder="Kowalski">
+            <label for="mail">E-mail</label>
+            <input type="text" id="mail" mail="mail" placeholder="example@example.com">
             <label for="age">Wiek</label>
             <input type="number" id="age" age="age" placeholder="25">
             <label for="sex">Płeć</label>
@@ -24,6 +49,21 @@
                 <option value="male">Mężczyzna</option>
                 <option value="female">Kobieta</option>
             </select>
+            <p>Jak często chcesz otrzymywać newsletter?</p>
+            <div class="options">
+                <div class="option">
+                <input type="radio" id="weekly" name="newsFrequency" value="weekly">
+                <label for="weekly">Tygodniowo</label>
+                </div>
+                <div class="option">
+                <input type="radio" id="monthly" name="newsFrequency" value="monthly">
+                <label for="monthly">Miesięcznie</label>
+                </div>
+                <div class="option">
+                <input type="radio" id="quarterly" name="newsFrequency" value="quarterly">
+                <label for="quarterly">Kwartalnie</label>
+                </div>
+            </div>
             <div class ="subButton">
                 <input type="submit" value="Wyślij">
             </div>

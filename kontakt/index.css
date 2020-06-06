@@ -46,6 +46,7 @@ form {
     background-color: gainsboro;
     font-weight: bold;
     font-family: 'Bahnschrift';
+    align-items: center;
 }
 .form {
     display: flex;
@@ -59,6 +60,22 @@ input {
     border: dotted 1px black;
 }
 
+input[type=text] {
+    height: 2vh;
+    width: 10%;
+}
+
+input[type=number] {
+    height: 2vh;
+    width: 10%;
+}
+
+input[type=number]:focus {
+    height: 2vh;
+    width: 10%;
+    background-color: antiquewhite;
+}
+
 input[type=submit] {
     border: solid 1px black;
     font-family: 'Bahnschrift';
@@ -70,16 +87,38 @@ input[type=submit]:focus {
     font-family: 'Bahnschrift';
     margin-top: 10%;
     background-color: antiquewhite;
+    width: auto;
 }
 
-input:focus {
+select {
+    height: auto;
+    width: 10%;
+}
+
+input[type=text]:focus {
     font-family: 'Arial';
-    width: auto;
+    width: 10%;
     background-color: antiquewhite;
     border: solid 1px black;
+}
+.options {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    left: 30%;
+}
+
+.option {
+    display: flex;
+    flex-flow: row;
+    width: auto;
+    align-items: center;
 }
 
 .subButton {
     width: 10%;
-    left: auto;
+    left: 30%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
