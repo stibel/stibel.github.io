@@ -11,31 +11,8 @@
             <h1>Newsletter</h1>
         </div>
     </div>
-    <?php
-        if (!empty($_REQUEST["firstName") && !empty($_REQUEST["surname"]) && !empty($_REQUEST["mail"] &&
-         !empty($_REQUEST["age"]) && !empty($_REQUEST["sex"]) && !empty($_REQUEST["newsFrequency"]))
-            {
-                $name = $_REQUEST["firstName"];
-                $surname = $_REQUEST["surname"];
-                $mail = $_REQUEST["mail"];
-                $age = $_REQUEST["age"];
-                $sex = $_REQUEST["sex"];
-                $frequency = $_REQUEST["frequency"];
-            } else die("Brak danych wejściowych");
-        $string = file_get_contents("baza.json");
-        if ( $string )
-        $arr = json_decode($string, true) or die("Niewłaściwy plik JSON!") ;
-        else
-        $arr = array();
-        array_push($arr, array("name" = $imie, "nazwisko" = $surname, "email" = $mail, "age" = $age,
-            "sex" = $sex, "frequency" = $frequency));
-        $string = json_encode ( $arr ) ;
-        if(file_put_contents("baza.json", $string ))
-        echo " Dodane !" ;
-        else die("Błąd!") ;
-    >
     <div class ="formBackground">
-        <form class="form" action="welcome.php" method="get">
+        <form class="form" action="./kontakt/index.html" method="post">
             <label for="firstName">Imię</label>
             <input type="text" id="firstName" name="firstName" placeholder="Jan">
             <label for="surname">Nazwisko</label>
@@ -65,7 +42,7 @@
                 </div>
             </div>
             <div class ="subButton">
-                <input type="submit" value="Wyślij">
+                <input type="submit" name="submit" id="submit" value="Wyślij">
             </div>
         </form>
     </div>
