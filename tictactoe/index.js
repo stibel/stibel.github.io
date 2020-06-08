@@ -1,6 +1,7 @@
 const positions = [0,0,0,
-    0,0,0,
-    0,0,0];
+                    0,0,0,
+                    0,0,0];
+
 const lu = document.getElementById("lu");
 const u = document.getElementById("u");
 const ru = document.getElementById("ru");
@@ -13,8 +14,8 @@ const dr = document.getElementById("dr");
 const restart = document.getElementById("NG")
 
 const divs = [lu, u, ru,
-    l, m, r,
-    dl, d, dr];
+                l, m, r,
+                dl, d, dr];
 
 let gameOver = false;
 
