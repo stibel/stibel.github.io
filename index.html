@@ -1,67 +1,34 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="./index.css">
     <meta charset="UTF-8">
     <title>Moja Strona</title>
 </head>
+<body>
     <div class="layout">
         <div class="title">
-            <img src="./background.jpg" alt="background" />
+            <img src="./backgroundMain.jpg" alt="background" />
             <h1> Rosyjskie okręty o napędzie atomowym </h1>
         </div>
     </div>
-    <div class ="info">
-        <div class ="head">
-            <h1>Początek atomowych okrętów podwodnych</h1>
+    <div class="menu">
+        <a class="buttons" href="subs/submarines.html"><div class="menuOption" id="subs">Okręty podwodne</div></a>
+        <a class="buttons" href="cruisers/rocketCruisers.html"><div class="menuOption" id="cruisers">Krążowniki rakietowe</div></a>
+        <div class="menuDropOption">Galeria
+            <div class="dropdownOptions">
+                <a class="gallery" href="#">Zdjęcia</a>
+                <a class="gallery" href="#">Filmy</a>
+            </div>
         </div>
-        <div class ="text">
-            <p>
-                Kiedy 30 grudnia 1954 roku została po raz pierwszy uruchomiona nuklearna siłownia okrętu USS "Nautilus", a 18 dni później, 17
-                stycznia 1955 roku okręt odpłynął od nabrzeża i popłynął w dół rzeki Thames w USA rozpoczęła się nowa era w historii okrętów
-                podwodnych.
-                Okrętem dowodził kmdr. Eugene’a P. Wilkinsona, który lampą sygnałową nadał historyczny sygnał: „Underway on nuclear power” (w
-                drodze na energii nuklearnej). 3 sierpnia 1958 roku „Nautilus” jako pierwszy okręt przepłynął pod biegunem północnym, a przeprowadzone zarówno przez marynarkę
-                amerykańską, jak i brytyjską ćwiczenia w zwalczaniu okrętów podwodnych z udziałem „Nautilusa” ujawniły, że wprawione w zwalczaniu
-                okrętów podwodnych siły anglo-amerykańskie są bezradne wobec jednostek tak szybkich pod wodą. Paradoksalnie, stało się to powodem
-                dużego zaniepokojenia dowództw marynarki amerykańskiej, które zdawały sobie sprawę z faktu, że Związek Radziecki kończy
-                już prace nad własnym okrętem podwodnym z napędem jądrowym.
-            </p>
+        <a class="buttons" href="trivia/trivia.html"><div class="menuOption" id="trivia">Ciekawostki</div></a>
+        <div class="menuDropOption" id="other">Inne
+            <div class="dropdownOptions">
+                <a class="gallery" href="kontakt/index.html">Newsletter</a>
+                <a class="gallery" href="tictactoe/index.html">Kółko i krzyżyk</a>
+            </div>
         </div>
-        <div class ="head">
-            <h1>Pierwsze atomowe okręty w marynarce ZSRR</h1>
-        </div>
-        <div class ="text">
-            <p>
-                W sierpniu 1957 roku w radzieckim „zakładzie nr 402” (stocznia „Siewmasz”) w Siewierodwińsku zwodowano pierwszy
-                radziecki atomowy okręt podwodny K-3 „Leninskij Komsomoł” projektu 627. Konstrukcja okazała się niezbyt udana,
-                toteż konstruktorzy z radzieckiego biura konstrukcyjnego SKB-143 szybko wprowadzili poprawki do projektu, zaś
-                przeprojektowane okręty skierowano do produkcji pod oznaczeniem projekt 627A, który w kodzie NATO otrzymał oznaczenie
-                November.
-            </p>
-        </div>
-        <div class ="head">
-            <h1>Krążowniki o napędzie atomowym</h1>
-        </div>
-        <div class ="text">
-            <p>
-                Współczesne duże okręty wojenne, odmiana klasy krążowników rakietowych, o napędzie atomowym (nuklearnym),
-                budowane w niewielkiej ilości jedynie w USA i ZSRR.
-                Pierwszym krążownikiem atomowym był amerykański USS "Long Beach", który wszedł do służby w 1961, w następnym
-                roku do służby oddano mniejszy USS "Bainbridge", początkowo klasyfikowany jako wielka fregata. Do 1978 roku do
-                służby amerykańskiej oddano jeszcze 7 takich okrętów. Wszystkie amerykańskie krążowniki atomowe
-                zostały wycofane ze służby do końca lat 90. XX wieku.
-                Jedyną różnicą od krążowników rakietowych o klasycznym napędzie był ich wielki,
-                praktycznie nieograniczony zasięg pływania, wynikający z zastosowania napędu atomowego.
-                Jedynym państwem, które wprowadziło okręty tej klasy oprócz USA, był ZSRR, następnie Rosja. W latach 1981 - 1995
-                weszły tam do służby 4 wielkie krążowniki atomowe typu Kirow: "Kirow" (w 1992 przemianowany na
-                "Admirał Uszakow"), "Frunze" (przemianowany na "Admirał Łazariew"), "Kalinin" (przemianowany na "Admirał Nachimow")
-                i "Piotr Wielki". Obecnie jedynie dwa ostatnie znajdują się w aktywnej służbie. Radzieckie krążowniki atomowe
-                są to wyjątkowo duże okręty o wyporności 23 750 ton. Z racji posiadania wyjątkowo silnego uzbrojenia
-                w postaci ciężkich przeciwokrętowych pocisków rakietowych, ich podstawowym przewidywanym przeznaczeniem jest
-                zwalczanie zespołów floty, a szczególnie grup lotniskowcowych przeciwnika.
-            </p>
-        </div>
+    </div>
     </div>
     <div style="overflow-x: auto;">
         <div class="tableOfShips">
@@ -126,6 +93,7 @@
             <div class="tableContent" id="orlanWarhead">-</div>
         </div>
     </div>
+    <!--
     <div class ="photoDesc">
         <div class ="sub705">
             <p>Okręt projektu 705 (Lira)</p>
@@ -162,40 +130,6 @@
             <source src ="./BoreiLaunch.mp4" type ="video/mp4" />
         </video>
     </div>
-    <div class ="info">
-        <br/>
-        <div class ="headTwo">
-            <h2>Zalety i wady napędu atomowego</h2>
-        </div>
-        <div class ="unnumberedList">
-            <ul>
-                <li>Brak potrzeby stałego dostępu do powietrza - zmniejszenie ryzyka wykrycia przez
-                wyeliminowanie potrzeby użycia <a href ="https://pl.wikipedia.org/wiki/Chrapy_(%C5%BCegluga)" target="_blank">chrap</a> </li>
-                <li>Czas zanurzenia ograniczony tylko ilością prowiantu i odpornością psychiczną załogi</li>
-                <li>Brak potrzeby oszczędzania paliwa - możliwość rozwinięcia maksymalnej prędkości pod wodą</li>
-                <br/>
-                <li>Odgłosy pomp chłodzących reaktor mogą doprowadzić do wykrycia okrętu</li>
-            </ul>
-        </div>
-        <div class ="headTwo">
-             <h2>Książki i filmy w których ukazano okręty atomowe</h2>
-        </div>
-        <div class ="numberedList">
-            <ol>
-                <li><b>"Polowanie na Czerwony Październik" </b><i>(Tom Clancy)</i><br/>Tytułowy "Czerwony Październik"
-                to nieistniejąca modyfikacja okrętu klasy Akula wyposażona w rewolucyjny napęd
-                który pozwala na zupełnie bezgłośny ruch.</li>
-                <li><b>"Czerwony Sztorm" </b><i>(Tom Clancy)</i><br/>Książka opisuje możliwy scenariusz konwencjonalnej III Wojny Światowej.
-                Jeden z wątków skupia się na dowódcy amerykańskiego okrętu powodnego, ale pojawiają się też opisy działań
-                radzieckich sił podwodnych - opisana jest na przykład zasadzka przygotowana przez okręt klasy Alfa.
-                Swój krótki epizod ma też krążownik rakietowy Kirov.</li>
-                <br/>
-                <li><b>"Polowanie na Czerwony Październik" </b><i>(John McTiernan)</i><br/>
-                Ekranizacja powieści o tym samym tytule. W filmie główne role grają
-                Sean Connery i Alek Baldwin.</li>
-            </ol>
-        </div>
-    </div>
     <div class="info">
         <div class="headThree">
             <h3><a class="newsletter" href="kontakt/index.html">Zapisz się do miesięcznego newslettera</a></h3>
@@ -205,6 +139,6 @@
             <h3><a class="newsletter" href="tictactoe/index.html">Zagraj w kółko i krzyżyk</a></h3>
         </div>
         <br/>
-    </div>
+    </div>-->
 </body>
 </html>

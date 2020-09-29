@@ -1,3 +1,21 @@
+.head {
+    font-family: 'Bahnschrift';
+    font-size: 100%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 1%;
+    border: solid 1px black;
+}
+
+.head:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    border: solid 2px navy;
+}
+
+
+
 .game {
     display: flex;
     flex-flow: column;
@@ -122,17 +140,17 @@
     z-index: 10;
 }
 
-.head {
+.return {
     font-family: 'Bahnschrift';
     font-size: 100%;
-    width: auto;
+    width: 25vw;
     height: auto;
     text-align: center;
     padding: 1%;
     border: solid 1px black;
 }
 
-.head:hover {
+.return:hover {
     cursor: pointer;
     background-color: skyblue;
     border: solid 2px navy;

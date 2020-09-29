@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.title {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 150%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: navy;
+}
+
+.title img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.head {
+    font-family: 'Arial';
+    font-size: 100%;
+    width: 100%;
+    height: 10%;
+    -webkit-text-fill-color: navy;
+    background-color: skyblue;
+    text-align: center;
+}
+.text {
+    font-family: 'Arial';
+    font-size: 80%;
+    width: 98%;
+
+}
+
+
+p {
+    text-align: justify;
+    text-justify: auto;
+}
+
+.return {
+    font-family: 'Bahnschrift';
+    font-size: 100%;
+    width: 25vw;
+    height: auto;
+    text-align: center;
+    padding: 1%;
+    border: solid 1px black;
+}
+
+.return:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    border: solid 2px navy;
+}
+
+a.mainSite:link {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+}
+
+a.mainSite:hover {
+    text-decoration: underline;
+}
+
+a.mainSite:visited {
+    -webkit-text-fill-color: black;
+}

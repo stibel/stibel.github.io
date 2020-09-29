@@ -36,6 +36,10 @@ body, html {
 }
 
 .formBackground {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
     width: 100%;
     height: 100vh;
     background-color: gainsboro;
@@ -121,4 +125,34 @@ input[type=text]:focus {
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+.return {
+    align-self: center;
+    font-family: 'Bahnschrift';
+    font-size: 100%;
+    width: 25vw;
+    height: auto;
+    text-align: center;
+    padding: 1%;
+    border: solid 1px black;
+}
+
+.return:hover {
+    cursor: pointer;
+    background-color: skyblue;
+    border: solid 2px navy;
+}
+
+a.mainSite:link {
+    text-decoration: none;
+    -webkit-text-fill-color: black;
+}
+
+a.mainSite:hover {
+    text-decoration: underline;
+}
+
+a.mainSite:visited {
+    -webkit-text-fill-color: black;
 }
